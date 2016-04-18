@@ -1,0 +1,46 @@
+<div id= "header">
+    <img src="/imagenes/logo_grande.jpg" alt="logo"/>
+    <h1>Sistema de Gestión de Contenido</h1>
+</div>
+<div id="menu">
+<p><body vlink= #F68428>
+    <%= link_to("Publicar evento", 
+        {:controller => 'eventos',
+         :action => 'new'}) %>
+    &nbsp;         
+    <%= link_to("Publicar noticia", 
+        {:controller => 'posts',
+         :action => 'new'}) %>
+    &nbsp;
+    <%= link_to("Eventos", 
+        {:controller => 'eventos',
+         :action => 'index'}) %>
+    &nbsp;
+    <%= link_to("Noticias", 
+        {:controller => 'posts',
+         :action => 'index'}) %>
+    &nbsp;     
+    <form>
+        <input type="text" placeholder="Buscar..." required>
+        <input type="button" value="Buscar">
+    </form>
+</body></p>
+</div>
+<style>
+    body{
+      font-family: tahoma;
+    }
+    #header {
+        background-color:white;
+        color: #1551A0;
+        text-align:center;
+        padding:10px;
+    }
+    
+    #menu {
+        background-color: #1551A0;;
+        color: white;
+        text-align: center;
+        padding:10px;
+    }
+</style>
