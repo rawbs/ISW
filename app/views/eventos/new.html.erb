@@ -1,4 +1,4 @@
-<h1>Ingresar nuevo Evento</h1>
+<h1>Ingresar nuevo evento</h1>
 
 <%= form_for :evento, url: eventos_path do |f| %>
   <p>
@@ -6,12 +6,12 @@
     <%= f.text_field :title %>
   </p>
   <p>
-    <%= f.label :description, 'Descripción del Evento' %><br>
-    <%= f.text_area :description %>
+    <%= f.label :body, 'Descripción del Evento' %><br>
+    <%= f.text_area :body %>
   </p>
   <p>
-    <%= f.label :datetime, 'Fecha del Evento' %><br>
-    <%= f.datetime_field :datetime %>
+    <%= f.label :evdate, 'Fecha del Evento' %><br>
+    <%= f.date_field :evdate %>
   </p>
   <p>
     <%= f.submit "Publicar" %>

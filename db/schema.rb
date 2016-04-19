@@ -13,10 +13,10 @@
 
 ActiveRecord::Schema.define(version: 20160417054108) do
 
-  create_table "evento", force: :cascade do |t|
-    t.datetime "datetime"
+  create_table "eventos", force: :cascade do |t|
     t.string   "title"
-    t.text     "description"
+    t.text     "body"
+    t.date     "evdate"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

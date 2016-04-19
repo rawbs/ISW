@@ -4,15 +4,15 @@
 </div>
 
 <% @eventos.each do |evento| %>
-    <div class="post_wrapper">
+    <div class="evento_wrapper">
         <h2 class="title">
             <%= link_to evento.title, evento %>
         </h2>
-        <p class="description">
-            <%= evento.description %>
+        <p class="body">
+            <%= evento.body %>
         </p>
         <p class="date">
-            <%= post.created_at.strftime("%B, %d, %Y") %>
+            <%= evento.created_at.strftime("%B, %d, %Y") %>
         </p>
     </div>
 <% end %>
