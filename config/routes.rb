@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  
+  resources :actividads
+  resources :noticia
+  resources :noticia
+  mount Ckeditor::Engine => '/ckeditor'
+  devise_for :admins
   #get '/eventos'=>'eventos#index'
   #get '/posts' =>'posts/index'
   #get '/posts/new'=>'posts#new'

@@ -5,26 +5,65 @@
 <div id="menu">
 <p><body vlink= #F68428>
     <%= link_to("Publicar evento", 
-        {:controller => 'eventos',
+        {:controller => 'actividads',
          :action => 'new'}) %>
     &nbsp;         
     <%= link_to("Publicar noticia", 
-        {:controller => 'posts',
+        {:controller => 'noticia',
          :action => 'new'}) %>
     &nbsp;
     <%= link_to("Eventos", 
-        {:controller => 'eventos',
+        {:controller => 'actividads',
          :action => 'index'}) %>
     &nbsp;
     <%= link_to("Noticias", 
-        {:controller => 'posts',
+        {:controller => 'noticia',
          :action => 'index'}) %>
-    &nbsp;     
+    &nbsp;
+    <!-- link_to ("get csv",
+        {:controller => 'seguidores',
+         :action => 'index'}) %>
+    &nbsp;
+    -->
+    <%= link_to "Gestor de listas", "https://login.mailchimp.com/?_ga=1.87043356.524061047.1463891449", :target => "_blank" %>
+
+
     <form>
         <input type="text" placeholder="Buscar..." required>
         <input type="button" value="Buscar">
     </form>
 </body></p>
+</div>
+<div>
+            <a class="muut" href="https://muut.com/i/musicamigos">musicamigos</a>
+        <script src="//cdn.muut.com/1/moot.es.min.js"></script>
+      
+</div>
+
+
+<div>
+<footer>
+   <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#1551A0; clear:left; font:14px Helvetica,Arial,sans-serif;  width:300px;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="//facebook.us13.list-manage.com/subscribe/post?u=0fc6ee55f3ee648f471efc32b&amp;id=81b4c62aeb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL">Suscríbase a nuestra lista de correos</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0fc6ee55f3ee648f471efc32b_81b4c62aeb" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+</footer>
 </div>
 <style>
     body{
@@ -38,7 +77,13 @@
     }
     
     #menu {
-        background-color: #1551A0;;
+        background-color: #1551A0;
+        color: white;
+        text-align: center;
+        padding:10px;
+    }
+    footer{
+        background-color: #1551A0;
         color: white;
         text-align: center;
         padding:10px;
