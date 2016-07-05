@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  
   #get '/eventos'=>'eventos#index'
   #get '/posts' =>'posts/index'
   #get '/posts/new'=>'posts#new'
